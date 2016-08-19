@@ -39,8 +39,7 @@ What you get out
 The algorithm creates a *Cluster* instance representing an hierachy of cluster nodes based on their distances.
 You may want to visualize the result using the Swing component *DendrogramPanel*:
 
-    DendrogramPanel dp = new DendrogramPanel();
-    dp.setModel(cluster);
+    DendrogramPanel.visualize(cluster);
 
 When embedded into a JFrame the dendrogram panel should display this:
 
