@@ -14,7 +14,7 @@ public class DistanceMeasurement {
 			for (int j = i + 1; j < SIZE; j++) {
 				String DOCA = documents.get(i);
 				String DOCB = documents.get(j);
-
+				System.out.println(DOCA+" <-> "+DOCB);
 				double distance = 1 - CosineDocSimilarity.getCosineSimilarity(DOCA, DOCB);
 				distanceMatrix[i][j] = distance;
 				distanceMatrix[i][i] = 0;
